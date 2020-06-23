@@ -1,0 +1,65 @@
+{
+  "id": "1879252",
+  "name": "myBacnend",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11177590",
+      "name": "文档",
+      "font_class": "ziyuan",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3696033",
+      "name": "游戏",
+      "font_class": "youxi-yuanshijituantubiao",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "6851550",
+      "name": "图表",
+      "font_class": "tubiao",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "7533297",
+      "name": "图标",
+      "font_class": "tubiao1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "8221830",
+      "name": "shouye",
+      "font_class": "shouye",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "142287",
+      "name": "collapse-right",
+      "font_class": "collapseright",
+      "unicode": "e94e",
+      "unicode_decimal": 59726
+    },
+    {
+      "icon_id": "14364270",
+      "name": "collapse-left",
+      "font_class": "collapse-left",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "630037",
+      "name": "xiala",
+      "font_class": "xiala",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    }
+  ]
+}

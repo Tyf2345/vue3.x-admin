@@ -1,0 +1,81 @@
+html,body,div,p,ul,li,span,a,button,input{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body,#app{
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+.ontline{
+    outline:0;
+}
+.cursorP{
+    cursor: pointer;
+}
+.ovflowHide{
+    overflow: hidden;
+}
+.positionR{
+    position: relative;
+}
+.positionA{
+    position: absolute;
+}
+.TRBL{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.opacity0{
+    opacity: 0;
+}
+.w100{
+    width: 100%;
+}
+.h100{
+    height: 100vh;
+}
+.w80px{
+    width: 80px;
+}
+.w120px{
+    width: 120px;
+}
+.flx{
+    display: flex;
+}
+.flx1{
+    flex:1;
+}
+.border4px{
+    border-radius: 4px;
+}
+
+.pd0-20{
+    padding: 0 20px;
+}
+.pd0-40{
+    padding: 0 40px;
+}
+.mr15{
+    margin-right: 15px;
+}
+.mb15{
+    margin-bottom: 15px;
+}
+
+
+
+.colorfff {
+    color: #fff;
+  }
+
+  .charts{
+    height: 400px;
+    border: 1px solid #b3c0d1;
+    border-radius: 6px;
+  }
