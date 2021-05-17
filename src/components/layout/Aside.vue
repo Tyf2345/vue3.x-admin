@@ -48,7 +48,7 @@
 <script>
 import { reactive, toRefs, onBeforeMount, } from "vue";
 import Data from "../../router/layout";
-import { useRoute } from "vue-router";
+import { useRoute,useRouter } from "vue-router";
 export default {
   props: {
     asideFlag: Boolean
@@ -59,6 +59,7 @@ export default {
       treeData: [],
       route: useRoute()
     });
+    const router = useRouter();
     // 点击下拉箭头实现收缩
     function handleToggle(idx) {
       let newTreeData = [...state.treeData];
@@ -68,7 +69,7 @@ export default {
     // 点击li标签实现跳转
     function handleClickRouter(w, e) {
       state.activeRouter = w.path;
-      this.$router.push(w.path);
+        router.push(w.path);
       e ? e.stopPropagation() : null;
     }
     onBeforeMount(() => {

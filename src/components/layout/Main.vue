@@ -32,7 +32,7 @@ export default {
   },
   setup(props, { emit }) {
     let route = ref(useRoute());
-    let router = ref(useRouter());
+    let router = useRouter();
     let tabData = ref([
       {
         path: route.value.path,
@@ -78,7 +78,7 @@ export default {
 
     // 点击tag 路由跳转
     function handleRouter(item) {
-      router.value.push(item.path);
+      router.push(item.path);
     }
     // 关闭tag
     function handleColseTag(i) {
@@ -92,9 +92,9 @@ export default {
           }
         ];
       }
-    
+
        tabData.value = newTags;
-       this.$router.push(tabData.value[tabData.value.length-1].path)
+        router.push(tabData.value[tabData.value.length-1].path)
     }
     function handleClickAside() {
       emit("on-handle-click-aside");
