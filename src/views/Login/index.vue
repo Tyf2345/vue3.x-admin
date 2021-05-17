@@ -21,6 +21,7 @@
 </template>
 <script>
 import { ref,reactive } from "vue";
+import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
 import { isTrimAction } from "../../utils/verification";
 export default {
@@ -29,13 +30,15 @@ export default {
     const pwd = ref("");
     const state = reactive({
     store:useStore()
-    })
+    });
+    const router = useRouter();
+
     function handleSubmit() {
       if (isTrimAction(userName.value) && isTrimAction(pwd.value)) {
         let user = {userName:userName.value,pwd:pwd.value,time:new Date()}
         localStorage.setItem('user',JSON.stringify(user))
         state.store.commit('userFun',user)
-          this.$router.push({
+          router.push({
               path:'/layout'
           })
         return;
